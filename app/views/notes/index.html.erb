@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+<title>like a forest</title>
+
+  <style>
+  h1 {
+  background-color: grey;margin: 20px;
+  font-size: 300%;
+  font-family: 'Dancing Script', cursive;
+  color: black;
+  }
+
+  </style>
+
+  <h1>Like a forest</h1>
+
+   <section>
+    <h2 style="color: blue; ">listen to chilledcow</h2>
+   </section>
+   <nav>
+
+   </nav>
+
+    <iframe autoplay width="100%" height="77%" src="https://www.youtube.com/embed/DWcJFNfaw9c?autoplay=1" frameborder="10" color:black; allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <a href="page2.html"><h1>NEXT</h1></a>
+    <p>Copyright 42069 all rights reserved </p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>User</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @notes.each do |note| %>
+      <tr>
+        <td><%= note.name %></td>
+        <td><%= note.description %></td>
+        <td><%= note.user_id %></td>
+        <td><%= link_to 'Show', note %></td>
+        <td><%= link_to 'Edit', edit_note_path(note) %></td>
+        <td><%= link_to 'Destroy', note, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'Leave your thoughts here', new_note_path %>
