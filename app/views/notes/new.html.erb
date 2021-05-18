@@ -1,5 +1,12 @@
-<h1>New Note</h1>
+<style>
+.content {
+  max-width: 300px;
+  margin: auto;
+} </style>
+<div style="content">
 
+<h1>New Note</h1>
+</div>
 <%= render 'form', note: @note %>
 
 <%= link_to 'Back', notes_path %>
