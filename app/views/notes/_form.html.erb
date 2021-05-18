@@ -1,14 +1,6 @@
 <%= form_with(model: note) do |form| %>
   <% if note.errors.any? %>
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
-   <div style="content">
-    <style>
-    .content {
-      max-width: 300px;
-      margin: auto;
-    }
-    </style>
+
     <div id="error_explanation">
       <h2><%= pluralize(note.errors.count, "error") %> prohibited this note from being saved:</h2>
 
@@ -33,5 +25,5 @@
   <div class="actions">
     <%= form.submit %>
   </div>
-  </div>
+
 <% end %>

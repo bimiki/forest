@@ -1,11 +1,5 @@
 <p id="notice"><%= notice %></p>
 
- <style>
- .content {
-   max-width: 300px;
-   margin: auto;
- } </style>
-<div style="content">
 <p>
   <strong>Name:</strong>
   <%= @note.name %>
@@ -20,6 +14,6 @@
   <strong>User:</strong>
   <%= @note.user_id %>
 </p>
-</div>
+
 <%= link_to 'Edit', edit_note_path(@note) %> |
 <%= link_to 'Back', notes_path %>
