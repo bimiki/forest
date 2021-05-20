@@ -13,9 +13,3 @@
  *= require_tree .
  *= require_self
  */
- <style>
- h1 {
- background-color: grey;
- font-family: cursive;
- color: black;
- }
