@@ -1,11 +1,4 @@
-<style>
-grey {
-background-color: grey;margin: 20px; text-align: center;
-font-size: 100%;
-color: black;
-}
-</style>
-<grey>
+<grey style="grey">
 <h2>Edit <%= resource_name.to_s.humanize %></h2>
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>

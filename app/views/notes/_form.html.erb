@@ -1,12 +1,12 @@
 
   <style>
-  body {
+  div {
   background-color: grey;margin: 20px; text-align: center;
-  font-size: 300%;
+  font-size: 50%;
   color: black;
 }
   </style>
-  <body>
+  <div>
 <%= form_with(model: note) do |form| %>
   <% if note.errors.any? %>
 
@@ -36,4 +36,4 @@
   </div>
 
 <% end %>
-</body>
+</div>

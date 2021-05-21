@@ -1,16 +1,21 @@
 // Place all the styles related to the tasks controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
-
 
   .h1 {
-  background-color: grey;margin: 20px; text-align: center;
+  background-color: grey; opacity: 0.5; margin: 20px; text-align: center;
   font-size: 300%;
+
   font-family: 'Dancing Script', cursive;
   color: black;
   }
+
+  .bluehand {
+   color: blue; font-family: 'Dancing Script', cursive;
+   margin: auto;
+   text-align: center;
+  }
+
   .greyhand {
   font-size: 100%;
   font-family: 'Dancing Script', cursive;

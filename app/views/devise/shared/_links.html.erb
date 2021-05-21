@@ -1,11 +1,4 @@
-<style>
-grey {
-background-color: grey;margin: 20px; text-align: center;
-font-size: 100%;
-color: black;
-}
-</style>
-<grey>
+<grey style="grey">
 <%- if controller_name != 'sessions' %>
   <%= link_to "Log in", new_session_path(resource_name) %><br />
 <% end %>

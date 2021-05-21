@@ -1,15 +1,10 @@
 
-  <style>
-  body {
-  background-color: grey;margin: 20px; text-align: center;
-  font-size: 300%;
-  color: black;
-}
-  </style>
-  <body>
+<body class="body">
+<div class="h1">
 <h1>New Note</h1>
 
 <%= render 'form', note: @note %>
 
 <%= link_to 'Back', notes_path %>
+</div>
 </body>
