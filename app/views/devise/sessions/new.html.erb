@@ -1,11 +1,11 @@
 <style>
-body {
+grey {
 background-color: grey;margin: 20px; text-align: center;
 font-size: 100%;
 color: black;
 }
 </style>
-<body>
+<grey>
 <h2>Log in</h2>
 
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
@@ -32,4 +32,4 @@ color: black;
 <% end %>
 
 <%= render "devise/shared/links" %>
-</body>
+</grey>

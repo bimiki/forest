@@ -1,11 +1,11 @@
 <style>
-body {
+grey {
 background-color: grey;margin: 20px; text-align: center;
 font-size: 200%;
 color: black;
 }
 </style>
-<body>
+<grey>
 <p>Hello <%= @email %>!</p>
 
 <% if @resource.try(:unconfirmed_email?) %>
@@ -13,4 +13,4 @@ color: black;
 <% else %>
   <p>We're contacting you to notify you that your email has been changed to <%= @resource.email %>.</p>
 <% end %>
-</body>
+</grey>
