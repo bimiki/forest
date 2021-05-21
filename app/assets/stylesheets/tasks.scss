@@ -2,6 +2,12 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
+  .header {
+  background-color: grey; opacity: 0.8; margin: 30px; text-align: center;
+  font-size: 50px;
+  font-family: 'Dancing Script', cursive;
+  color: black;
+  }
   .h1 {
   background-color: grey; opacity: 0.5; margin: 20px; text-align: center;
   font-size: 30px;

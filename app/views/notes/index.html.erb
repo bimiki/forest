@@ -3,7 +3,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
 
-<h1 class="h1">Like a forest</h1>
+<h1 class="header">Like a forest</h1>
 
 <h2 class="bluehand">listen to chilledcow</h2>
 
@@ -27,14 +27,13 @@
         <td><%= link_to 'Edit', edit_note_path(note) %></td>
   <!----<td><%= link_to 'Destroy', note, method: :delete, data: { confirm: 'Are you sure?' } %></td>-->
       </tr>
-
     <% end %>
   </tbody>
 </table>
-<br>
 
+<div class="h1">
+  <%= link_to 'Leave your thoughts here', new_note_path %>
 
+    <p>Copyright 42069 all rights reserved </p>
 
-<%= link_to 'Leave your thoughts here', new_note_path %>
-
-<p>Copyright 42069 all rights reserved </p>
+  </div>
