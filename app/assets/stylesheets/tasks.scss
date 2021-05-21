@@ -4,8 +4,7 @@
 
   .h1 {
   background-color: grey; opacity: 0.5; margin: 20px; text-align: center;
-  font-size: 300%;
-
+  font-size: 30px;
   font-family: 'Dancing Script', cursive;
   color: black;
   }
@@ -17,18 +16,26 @@
   }
 
   .greyhand {
-  font-size: 100%;
+  font-size: 100%;text-align: center;
   font-family: 'Dancing Script', cursive;
   color: grey;
+
   }
 
   .content {
     max-width: 350px;
     font-size: 30px;
     margin: auto;
+    text-align: center;
   }
 
-  .body
+  .lineupdamnit {
+    text-align: center;
+    font-size: 30px;
+    margin: auto;
+  }
+
+  .background
   {
     background: url(https://www.goodfreephotos.com/albums/canada/ontario/bronte-creek-state-park/canada-ontario-bronte-creek-state-park-walking-in-the-woods.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
