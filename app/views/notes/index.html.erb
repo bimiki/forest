@@ -8,9 +8,10 @@
 
     <h2 class="bluehand">listen to chilledcow</h2>
 
+ <div class="content">
 
-  <iframe autoplay class="content" src="https://www.youtube.com/embed/DWcJFNfaw9c?autoplay=1"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
-
+  <iframe autoplay src="https://www.youtube.com/embed/DWcJFNfaw9c?autoplay=1"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"> </iframe>
+ </div>
 <div class="content">
 <table>
   <thead>
@@ -32,12 +33,12 @@
         <td><%= link_to 'Edit', edit_note_path(note) %></td>
         <!-- <td><%= link_to 'Destroy', note, method: :delete, data: { confirm: 'Are you sure?' } %></td> " its not working and gets error so for now its out "-->
       </tr>
-</div>
+  </div>
     <% end %>
   </body>
-</table>
+  </table>
 
 <br>
 <p>Copyright 42069 all rights reserved </p>
-</body>
+
 <%= link_to 'Leave your thoughts here', new_note_path %>
