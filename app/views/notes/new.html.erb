@@ -2,14 +2,15 @@
   <style>
   body {
   background-color: grey;margin: 20px; text-align: center;
-  font-size: 300%;
+  font-size: 100%;
   color: black;
 }
   </style>
   <body>
 <h1>New Note</h1>
 
-<%= render 'form', note: @note %>
+
+<%= render 'form', note: @note  %>
 
 <%= link_to 'Back', notes_path %>
 </body>
