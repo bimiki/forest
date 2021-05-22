@@ -21,8 +21,8 @@
     <% @notes.each do |note| %>
       <tr>
         <td><%= note.name %></td>
-        <td src="self.up">/vote up </td>
-        <td src="self.down">/vote down </td>
+        <td><button src="self.up">/vote up </button></td>
+        <td><button src="self.down">/vote down </button></td>
         <td><iframe  height="" width="" src="<%= note.enbedable_url %>" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"> </iframe>
 
       </td>
