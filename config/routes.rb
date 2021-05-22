@@ -10,6 +10,8 @@ Rails.application.routes.draw do
     resources :tasks
   end
   devise_for :users
+
+  # this is the one i tried to write myself kinda but couldnt get to work so maybe use letsrate ? 
   resources :video do
   resources :rating
 

@@ -20,3 +20,4 @@ class RatingsController < ApplicationController
       @video = Video.find(parms[:video_id])
     end
 end
+# this is the one i tried to write myself kinda but couldnt get to work so maybe use letsrate ?
