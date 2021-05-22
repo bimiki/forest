@@ -1,0 +1,6 @@
+   identical  app/assets/javascripts/jquery.raty.js
+   identical  app/assets/images/star-on.png
+   identical  app/assets/images/star-off.png
+   identical  app/assets/images/star-half.png
+   identical  app/assets/javascripts/letsrate.js.erb
+   identical  app/controllers/rater_controller.rb

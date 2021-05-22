@@ -97,6 +97,7 @@ GEM
       concurrent-ruby (~> 1.0)
     jbuilder (2.11.2)
       activesupport (>= 5.0.0)
+    letsrate (1.0.9)
     loofah (2.9.1)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
@@ -245,6 +246,7 @@ DEPENDENCIES
   capybara (>= 3.26)
   devise
   jbuilder (~> 2.7)
+  letsrate
   nested_scaffold
   pg
   puma (~> 5.0)
