@@ -1,3 +1,4 @@
 class Video < ApplicationRecord
-  letsrate_rateable "video", "style",
+  letsrate_rateable "video", "style"
+
 end
