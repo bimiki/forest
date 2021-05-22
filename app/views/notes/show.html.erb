@@ -1,4 +1,4 @@
-<div class="h1">
+<div class="content2">
 <p id="notice"><%= notice %></p>
 
 <p>
@@ -10,6 +10,7 @@
   <strong>Description:</strong>
   <%= @note.description %>
 </p>
+<iframe autoplay height="500px" width="100%" src="<%= @note.enbedable_url %>" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"> </iframe>
 
 <p>
   <strong>User:</strong>
