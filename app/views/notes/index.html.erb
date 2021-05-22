@@ -22,6 +22,15 @@
       <tr>
         <td><%= note.name %></td>
         <td><iframe autoplay height="" width="" src="<%= note.enbedable_url %>" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"> </iframe>
+
+
+          form_for [@videos,@rating] do |f|
+            f.select("rating", "value", (1..10))
+            f.submit "Rate this Video"
+          end
+
+
+
 </td>
         <td><%= note.user_id %></td>
         <td><%= link_to 'Show', note %></td>

@@ -6,7 +6,11 @@ Rails.application.routes.draw do
     resources :tasks
   end
   devise_for :users
-  
+
+  resources :videos do
+  resources :ratings
+end
+
   get 'home/home'
   root 'notes#index'
 
