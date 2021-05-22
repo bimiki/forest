@@ -17,11 +17,11 @@
       <th class="greyhand">Your Thoughts</th>
       <th colspan="3"></th>
 
-  <tbody>
+  <tbody class="h2">
     <% @notes.each do |note| %>
       <tr>
         <td><%= note.name %></td>
-        <td><iframe autoplay height="100%" width="330%" src="<%= note.enbedable_url %>" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"> </iframe>
+        <td><iframe autoplay height="" width="" src="<%= note.enbedable_url %>" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"> </iframe>
 </td>
         <td><%= note.user_id %></td>
         <td><%= link_to 'Show', note %></td>
