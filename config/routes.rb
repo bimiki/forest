@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
   post '/rate' => 'rater#create', :as => 'rate'
+  get 'home/home'
+  root 'notes#index'
+
   resources :notes do
     resources :tasks
   end
@@ -7,10 +10,8 @@ Rails.application.routes.draw do
     resources :tasks
   end
   devise_for :users
-
-  get 'home/home'
-  root 'notes#index'
   resources :video do
   resources :rating
+
 end
 end
