@@ -3,6 +3,14 @@
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
 
+
+<%=  form_for [video, @rating, ] do |f| %>
+<%=  f.select("rating", "value", (1..10)) %>
+<%=  f.submit "Rate this Video" %>
+<% end %>
+
+
+
 <h1 class="header">Like a forest</h1>
 
 <h2 class="bluehand">listen to chilledcow</h2>
@@ -21,23 +29,16 @@
     <% @notes.each do |note| %>
       <tr>
         <td><%= note.name %></td>
-        <td><iframe autoplay height="" width="" src="<%= note.enbedable_url %>" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"> </iframe>
+        <td><iframe  class="video" height="" width="" src="<%= note.enbedable_url %>" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"> </iframe>
 
-
-          form_for [@videos,@rating] do |f|
-            f.select("rating", "value", (1..10))
-            f.submit "Rate this Video"
-          end
-
-
-
-</td>
+      </td>
         <td><%= note.user_id %></td>
         <td><%= link_to 'Show', note %></td>
         <td><%= link_to 'Edit', edit_note_path(note) %></td>
         <td><%= link_to 'Destroy', note, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
+
   </tbody>
 </table>
 

@@ -7,8 +7,8 @@ Rails.application.routes.draw do
   end
   devise_for :users
 
-  resources :videos do
-  resources :ratings
+  resources :video do
+  resources :rating
 end
 
   get 'home/home'
