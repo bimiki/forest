@@ -4,8 +4,8 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '2.7.3'
 
 
-gem 'letsrate'  #this might be trash lets find out - ya i think it was trash xd i had so many more issues randomly with it enabled 
-
+gem 'letsrate'  #this might be trash lets find out - ya i think it was trash xd i had so many more issues randomly with it enabled
+gem 'acts_as_votable' #possible other option i found i like the writing style better of the auther
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem 'rails', '~> 6.1.3', '>= 6.1.3.2'
