@@ -21,16 +21,16 @@
     <% @notes.each do |note| %>
       <tr>
         <!--<td><%= note.name %></td> this kinda made it look weird but im leaving just incase i change my mind-->
-        <td><button class="h2" <%=  %> >vote up </button></td>
-        <td><button class="h2" <%=   %> >vote down </button></td>
+        <td><button class="h2" onclick=              >vote up </button></td>
+        <td><button class="h2" onclick=              >vote down </button></td>
         <td><iframe  height="" width="" src="<%= note.enbedable_url %>" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"> </iframe>
+        <td><%= link_to 'rate'  %></td>
+      </tr>
 
-      </td>
-        <td><%= note.user_id %></td>
         <td><%= link_to 'Show', note %></td>
         <td><%= link_to 'Edit', edit_note_path(note) %></td>
         <td><%= link_to 'Destroy', note, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+
     <% end %>
 
   </form>
@@ -42,3 +42,4 @@
     <p>Copyright 42069 all rights reserved </p>
 
   </div>
+a

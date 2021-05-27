@@ -20,3 +20,8 @@
 <%= link_to 'Edit', edit_note_path(@note) %> |
 <%= link_to 'Back', notes_path %>
 </div>
+
+
+<%# show.html.erb -> /notes/1 %>
+
+note : <%= rating_for @note, "note" %>
