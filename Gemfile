@@ -5,7 +5,7 @@ ruby '2.7.3'
 
 
 
-gem 'acts_as_votable' #possible other option i found i like the writing style better of the auther
+gem 'acts_as_votable'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem 'rails', '~> 6.1.3', '>= 6.1.3.2'
@@ -31,6 +31,8 @@ gem 'jbuilder', '~> 2.7'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
+
+gem 'bootstrap-sass'
 
 gem 'devise'
 gem 'nested_scaffold'

@@ -1,6 +1,6 @@
-class AddCachedVotesToPosts < ActiveRecord::Migration
+class AddCachedVotesToNotes < ActiveRecord::Migration
   def change
-    change_table :posts do |t|
+    change_table :notes do |t|
       t.integer :cached_votes_total, default: 0
       t.integer :cached_votes_score, default: 0
       t.integer :cached_votes_up, default: 0
