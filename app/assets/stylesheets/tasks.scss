@@ -15,7 +15,9 @@
   color: black;
   }
   .h2 {
-  background-color: green; opacity: 0.9; margin: 20px; text-align: center;
+  width:  auto;
+  border: 5px solid green;
+  text-align: center;
   font-size: 20px;
   font-family: 'sans', bold;
   color: black;
@@ -36,9 +38,10 @@
 
   .content {
     max-width: 350px;
-    font-size: 30px;
+    font-size: 20px;
     margin: auto;
     text-align: center;
+
   }
   .content2 {
     max-width: 600px;

@@ -11,40 +11,24 @@
 <iframe autoplay height="200px" width="100%" src="https://www.youtube.com/embed/DWcJFNfaw9c?autoplay=1"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"> </iframe>
 </div>
 
-<table class="content">
-
       <p class="greyhand">YOUTUBE LIKE A FOREST</p>
-
       <th colspan="3"></th>
 
-  <form class="h2">
     <% @notes.each do |note| %>
 
         <!--<td><%= note.name %></td> -->
-    <tr class="nav">
+    <form >
       <p style="text-align: center;"><iframe  height="" width="" src="<%= note.enbedable_url %>" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"> </iframe></p>
 
-      <td >
-      <a ><%= link_to 'Show', note %></a>
-       </td>
-      <td >
-      <a ><%= link_to 'Edit', edit_note_path(note) %></a>
-       </td>
-      <td >
-      <a ><%= link_to 'Destroy', note, method: :delete, data: { confirm: 'Are you sure?' } %></a>
-       </td>
-      <td >
-      <a ><%= link_to 'Add', new_note_path %></a>
-      </td>
-    </tr>
+     <ul class="bluehand">
+      <button><%= link_to 'Show', note %></button>
+      <button><%= link_to 'Edit', edit_note_path(note) %></button>
+      <button><%= link_to 'Destroy', note, method: :delete, data: { confirm: 'Are you sure?' } %></button>
+      <button><%= link_to 'Add', new_note_path %></button>
+      </ul>
+    </form>
     <% end %>
 
-  </form>
-</table>
-
 <div class="h2">
-  <%= link_to 'Add your youtube URL to the list here', new_note_path %>
-
-    <p>Copyright 42069 all rights reserved </p>
-
+    <footer class="">Copyright 42069 all rights reserved </footer>
   </div>
