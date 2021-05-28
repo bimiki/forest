@@ -19,18 +19,21 @@
 
   <form class="h2">
     <% @notes.each do |note| %>
-      <tr>
+
         <!--<td><%= note.name %></td> -->
-        <td ><button class="h2" onclick=@post.liked_by @user1 >vote up </button></td>
-        <td ><button class="h2" onclick=post.downvote_from @user1  >vote down </button></td>
-        <td><iframe  height="" width="" src="<%= note.enbedable_url %>" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"> </iframe>
+        <tr class="nav nav-tabs">
+      <td><iframe  height="" width="" src="<%= note.enbedable_url %>" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"> </iframe>
 
-     </tr>
-
-        <td><%= link_to 'Show', note %></td>
-        <td><%= link_to 'Edit', edit_note_path(note) %></td>
-        <td><%= link_to 'Destroy', note, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-
+      <td class="nav-item">
+      <a class="nav-link" href="#"><%= link_to 'Show', note %></a>
+       </td>
+      <td class="nav-item">
+      <a class="nav-link" href="#"><%= link_to 'Edit', edit_note_path(note) %></a>
+       </td>
+      <td class="nav-item">
+      <a class="nav-link" href="#"><%= link_to 'Destroy', note, method: :delete, data: { confirm: 'Are you sure?' } %></a>
+       </td>
+       </tr>
     <% end %>
 
   </form>

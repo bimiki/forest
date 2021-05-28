@@ -1,31 +1,64 @@
 // Place all the styles related to the Notes controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+.header {
+background-size: length; background-color: grey;  opacity: 0.8; margin: 30px; text-align: center;
+font-size: 50px;
+font-family: 'Dancing Script', cursive;
+color: black;
+}
+.h1 {
+background-color: grey; opacity: 0.5; margin: 20px; text-align: center;
+font-size: 30px;
+font-family: 'Dancing Script', cursive;
+color: black;
+}
+.h2 {
+background-color: green; opacity: 0.9; margin: 20px; text-align: center;
+font-size: 20px;
+font-family: 'sans', bold;
+color: black;
+}
 
-  h1 {
-  background-color: grey;margin: 20px; text-align: center;
-  font-size: 300%;
-  font-family: 'Dancing Script', cursive;
-  color: black;
-  }
-  .greyhand {
-  font-size: 100%;
-  font-family: 'Dancing Script', cursive;
-  color: grey;
-  }
+.bluehand {
+ color: blue; font-family: 'Dancing Script', cursive;
+ margin: auto;
+ text-align: center;
+}
 
-  .content {
-    max-width: 350px;
-    font-size: 30px;
-    margin: auto;
-  }
+.greyhand {
+text-align: center;font-size: 20px;
+font-family: '', bold;
+color: white;
 
-  .background
-  {
-    background: url(https://www.goodfreephotos.com/albums/canada/ontario/bronte-creek-state-park/canada-ontario-bronte-creek-state-park-walking-in-the-woods.jpg) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+}
 
-  }
+.content {
+  max-width: 350px;
+  font-size: 30px;
+  margin: auto;
+  text-align: center;
+}
+.content2 {
+  max-width: 600px;
+  font-size: 20px;
+  margin: auto;
+  text-align: center;
+}
+
+
+.lineupdamnit {
+  text-align: center;
+  font-size: 30px;
+  margin: auto;
+}
+
+.background
+{
+  background: url(https://www.goodfreephotos.com/albums/canada/ontario/bronte-creek-state-park/canada-ontario-bronte-creek-state-park-walking-in-the-woods.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
