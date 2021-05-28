@@ -21,19 +21,22 @@
     <% @notes.each do |note| %>
 
         <!--<td><%= note.name %></td> -->
-        <tr class="nav nav-tabs">
-      <td><iframe  height="" width="" src="<%= note.enbedable_url %>" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"> </iframe>
+    <tr class="nav">
+      <p style="text-align: center;"><iframe  height="" width="" src="<%= note.enbedable_url %>" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"> </iframe></p>
 
-      <td class="nav-item">
-      <a class="nav-link" href="#"><%= link_to 'Show', note %></a>
+      <td >
+      <a ><%= link_to 'Show', note %></a>
        </td>
-      <td class="nav-item">
-      <a class="nav-link" href="#"><%= link_to 'Edit', edit_note_path(note) %></a>
+      <td >
+      <a ><%= link_to 'Edit', edit_note_path(note) %></a>
        </td>
-      <td class="nav-item">
-      <a class="nav-link" href="#"><%= link_to 'Destroy', note, method: :delete, data: { confirm: 'Are you sure?' } %></a>
+      <td >
+      <a ><%= link_to 'Destroy', note, method: :delete, data: { confirm: 'Are you sure?' } %></a>
        </td>
-       </tr>
+      <td >
+      <a ><%= link_to 'Add', new_note_path %></a>
+      </td>
+    </tr>
     <% end %>
 
   </form>
