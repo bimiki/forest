@@ -1,5 +1,5 @@
-<p id="notice"><%= notice %></p>
-<title>like a forest</title>
+
+
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
 
@@ -20,11 +20,11 @@
   <form class="h2">
     <% @notes.each do |note| %>
       <tr>
-        <!--<td><%= note.name %></td> this kinda made it look weird but im leaving just incase i change my mind-->
-        <td><button class="h2" onclick=              >vote up </button></td>
-        <td><button class="h2" onclick=              >vote down </button></td>
+        <!--<td><%= note.name %></td> -->
+        <td><button class="h2" onclick=@post.liked_by @user1 >vote up </button></td>
+        <td><button class="h2" onclick=@post.downvote_from @user1  >vote down </button></td>
         <td><iframe  height="" width="" src="<%= note.enbedable_url %>" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"> </iframe>
-        <td><%= link_to 'rate'  %></td>
+
       </tr>
 
         <td><%= link_to 'Show', note %></td>
@@ -36,7 +36,7 @@
   </form>
 </table>
 
-<div class="h1">
+<div class="h2">
   <%= link_to 'Add your youtube url to the list here', new_note_path %>
 
     <p>Copyright 42069 all rights reserved </p>

@@ -1,11 +1,21 @@
 <!DOCTYPE html>
 <html>
+  <title>like a forest</title>
   <head>
     <%= stylesheet_link_tag 'application', turbo_links_reload: true %>
     <%= javascript_pack_tag 'application', turbo_links_reload: true %>
   </head>
 
-  <body class="background">
+   <body class="background">
+
+   <% if notice.present? %>
+   <p id="notice"><%= notice %></p>
+   <% end %>
+
+   <div >
    <%= yield %>
+   </div>
+
   </body>
+
 </html>
