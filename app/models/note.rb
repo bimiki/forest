@@ -10,7 +10,7 @@ class Note < ApplicationRecord
   end
 
 end
-@note = Note.new(:name => 'my post!')
+@note = Note.new(:name => '')
 @note.save
 
 @note.liked_by @user

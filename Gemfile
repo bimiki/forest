@@ -5,7 +5,7 @@ ruby '2.7.3'
 
 
 
-gem 'acts_as_votable' #possible other option i found i like the writing style better of the auther
+gem 'acts_as_votable' 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem 'rails', '~> 6.1.3', '>= 6.1.3.2'

@@ -21,11 +21,11 @@
     <% @notes.each do |note| %>
       <tr>
         <!--<td><%= note.name %></td> -->
-        <td><button class="h2" onclick=@post.liked_by @user1 >vote up </button></td>
-        <td><button class="h2" onclick=@post.downvote_from @user1  >vote down </button></td>
+        <td ><button class="h2" onclick=@post.liked_by @user1 >vote up </button></td>
+        <td ><button class="h2" onclick=post.downvote_from @user1  >vote down </button></td>
         <td><iframe  height="" width="" src="<%= note.enbedable_url %>" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"> </iframe>
 
-      </tr>
+     </tr>
 
         <td><%= link_to 'Show', note %></td>
         <td><%= link_to 'Edit', edit_note_path(note) %></td>
@@ -37,9 +37,8 @@
 </table>
 
 <div class="h2">
-  <%= link_to 'Add your youtube url to the list here', new_note_path %>
+  <%= link_to 'Add your youtube URL to the list here', new_note_path %>
 
     <p>Copyright 42069 all rights reserved </p>
 
   </div>
-a
