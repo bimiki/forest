@@ -7,6 +7,15 @@ class NotesController < ApplicationController
     @notes = current_user.notes
   end
 
+  def upvote
+      @note = current_user.notes.find(params[:id])
+      if current_user.voted_up_on? @note
+        @note.unvote_by current_user
+      else
+        @note.upvote_by current_user
+      end
+      render "vote.js.erb"
+  end
   # GET /notes/1 or /notes/1.json
   def show
   end

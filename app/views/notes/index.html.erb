@@ -8,7 +8,7 @@
 <h2 class="bluehand">listen to chilledcow</h2>
 
 <div class="content">
-<iframe autoplay height="200px" width="100%" src="https://www.youtube.com/embed/DWcJFNfaw9c?autoplay=1"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"> </iframe>
+<iframe height="200px" width="100%" src="https://www.youtube.com/embed/DWcJFNfaw9c"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"> </iframe>
 </div>
 
       <p class="greyhand">YOUTUBE LIKE A FOREST</p>
@@ -17,16 +17,20 @@
     <% @notes.each do |note| %>
 
         <!--<td><%= note.name %></td> -->
-    <form >
+    <table>
       <p style="text-align: center;"><iframe  height="" width="" src="<%= note.enbedable_url %>" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"> </iframe></p>
-
-     <ul class="bluehand">
-      <button><%= link_to 'Show', note %></button>
-      <button><%= link_to 'Edit', edit_note_path(note) %></button>
-      <button><%= link_to 'Destroy', note, method: :delete, data: { confirm: 'Are you sure?' } %></button>
-      <button><%= link_to 'Add', new_note_path %></button>
-      </ul>
-    </form>
+  <th></th>
+  <th></th>
+  <th></th>
+     <tr class="bluehand">
+      <td><button><%= render "notes/upvote_link", note: note %></button></td>
+      <td><%= note.cached_weighted_score %> </td>
+      <td><button><%= link_to 'Show', note %></button></td>
+      <td><button><%= link_to 'Edit', edit_note_path(note) %></button></td>
+      <td><button><%= link_to 'Destroy', note, method: :delete, data: { confirm: 'Are you sure?' } %></button></td>
+      <td><button><%= link_to 'Add', new_note_path %></button></td>
+      </tr>
+    </table>
     <% end %>
 
 <div class="h2">

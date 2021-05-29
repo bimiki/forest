@@ -1,0 +1,9 @@
+<%= content_tag "div", id: "upvote-#{note.id}" do %>
+ <%= link_to upvote_note_path(note), method: :patch, remote: true do %>
+ <% if current_user.voted_up_on? note %>
+    unvote
+  <% else %>
+     vote!
+ <% end %>
+<% end %>
+<% end %>
