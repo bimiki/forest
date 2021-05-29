@@ -28,15 +28,15 @@
       <td><button><%= link_to 'Show', note %></button></td>
       <td><button><%= link_to 'Edit', edit_note_path(note) %></button></td>
       <td><button><%= link_to 'Destroy', note, method: :delete, data: { confirm: 'Are you sure?' } %></button></td>
-      <td><button><%= link_to 'Add', new_note_path %></button></td>
+      <!--<td><button><%= link_to 'Add', new_note_path %></button></td>-->
+      <br> </br>
       </tr>
     </div>
     <% end %>
 
-<div class="h2">
+<div class="lineupdamnit">
     <footer class="">
       <%= button_to 'Add URL', new_note_path %>
-
       Copyright 42069 all rights reserved
       <%= button_to "logout", destroy_user_session_path, method: :delete  %>
     </footer>
