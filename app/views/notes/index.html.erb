@@ -24,7 +24,7 @@
   <th></th>
      <tr class="bluehand">
       <td><button><%= render "notes/upvote_link", note: note %></button></td>
-      <td><%= note.cached_weighted_score %> </td>
+      <td><%= render "notes/votes_score", note: note %></td>
       <td><button><%= link_to 'Show', note %></button></td>
       <td><button><%= link_to 'Edit', edit_note_path(note) %></button></td>
       <td><button><%= link_to 'Destroy', note, method: :delete, data: { confirm: 'Are you sure?' } %></button></td>

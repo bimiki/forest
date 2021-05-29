@@ -1,1 +1,2 @@
 document.getElementById("upvote-<%= @note.id %>").innerHTML = "<%= j render "notes/upvote_link", note: @note %>";
+document.getElementById("votes-score-<%= @note.id %>").innerHTML = "<%= j render "notes/votes_score", note: @note %>";
