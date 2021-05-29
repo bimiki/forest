@@ -1,4 +1,6 @@
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
@@ -21,8 +23,8 @@
       <p style="text-align: center;"><iframe  height="" width="" src="<%= note.enbedable_url %>" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"> </iframe></p>
 
      <tr class="bluehand">
-      <td><button><%= render "notes/upvote_link", note: note %></button></td>
-      <td><button><%= render "notes/downvote_link", note: note %></button></td>
+      <td><button class="fa fa-thumbs-up"><%= render "notes/upvote_link", note: note %></button></td>
+      <td><button class="fa fa-thumbs-down"><%= render "notes/downvote_link", note: note %></button></td>
       <td><%= render "notes/votes_score", note: note %></td>
       <td><button><%= link_to 'Show', note %></button></td>
       <td><button><%= link_to 'Edit', edit_note_path(note) %></button></td>
