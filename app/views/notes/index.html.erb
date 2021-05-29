@@ -17,11 +17,9 @@
     <% @notes.each do |note| %>
 
         <!--<td><%= note.name %></td> -->
-    <table>
+    <div class="bluehand">
       <p style="text-align: center;"><iframe  height="" width="" src="<%= note.enbedable_url %>" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"> </iframe></p>
-  <th></th>
-  <th></th>
-  <th></th>
+
      <tr class="bluehand">
       <td><button><%= render "notes/upvote_link", note: note %></button></td>
       <td><button><%= render "notes/downvote_link", note: note %></button></td>
@@ -31,7 +29,7 @@
       <td><button><%= link_to 'Destroy', note, method: :delete, data: { confirm: 'Are you sure?' } %></button></td>
       <td><button><%= link_to 'Add', new_note_path %></button></td>
       </tr>
-    </table>
+    </div>
     <% end %>
 
 <div class="h2">
