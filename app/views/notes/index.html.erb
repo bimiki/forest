@@ -24,6 +24,7 @@
   <th></th>
      <tr class="bluehand">
       <td><button><%= render "notes/upvote_link", note: note %></button></td>
+      <td><button><%= render "notes/downvote_link", note: note %></button></td>
       <td><%= render "notes/votes_score", note: note %></td>
       <td><button><%= link_to 'Show', note %></button></td>
       <td><button><%= link_to 'Edit', edit_note_path(note) %></button></td>
