@@ -4,7 +4,7 @@ class NotesController < ApplicationController
   skip_before_action :verify_authenticity_token
   # GET /notes or /notes.json
   def index
-    @notes = Note.all.order(cached_votes_score: :desc)
+    @notes = current_user.notes.order(cached_votes_score: :desc)
   end
 
   def upvote
