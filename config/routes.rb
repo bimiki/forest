@@ -1,13 +1,15 @@
 Rails.application.routes.draw do
-  
+
   get 'home/home'
   root 'notes#index'
-
+  post 'notes/new'
+  
   resources :notes do
-    resources :tasks
     member do
       patch "upvote", to: "notes#upvote"
       patch "downvote", to: "notes#downvote"
+    resources :tasks
+
     end
 
   end
