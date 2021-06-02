@@ -13,7 +13,7 @@ default: &default
   additional_paths: []
 
   # Reload manifest.json on all requests so we reload latest compiled packs
-  cache_manifest: true
+  cache_manifest: false
 
   # Extract and emit a css file
   extract_css: false
@@ -46,7 +46,8 @@ default: &default
     - .gif
     - .jpeg
     - .jpg
-
+    # i added .jsx on a whim because i found a solution on stack overflow and it fixed it for them .. i dont think it helped me so delete later once i know for sure i guess
+    - .jsx
 development:
   <<: *default
   compile: true
@@ -83,7 +84,7 @@ production:
   <<: *default
 
   # Production depends on precompilation of packs prior to booting for performance.
-  compile: true
+  compile: false
 
   # Extract and emit a css file
   extract_css: true
