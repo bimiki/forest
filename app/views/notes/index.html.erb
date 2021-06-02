@@ -13,7 +13,7 @@
 
       <p class="greyhand">YOUTUBE LIKE A FOREST</p>
       <th colspan="3"></th>
-
+<div class="lineupdamnit" <%= button_to 'Add URL', new_note_path %> </div>
     <% @notes.each do |note| %>
 
         <!--<td><%= note.name %></td> -->
@@ -35,8 +35,8 @@
 
 <div class="lineupdamnit">
     <footer class="">
-      <%= button_to 'Add URL', new_note_path %>
+
       Copyright 42069 all rights reserved
-      <%= button_to "logout", destroy_user_session_path, method: :delete  %>
+
     </footer>
   </div>
