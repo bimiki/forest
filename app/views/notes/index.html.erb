@@ -13,7 +13,7 @@
 
       <p class="greyhand">YOUTUBE LIKE A FOREST</p>
       <th colspan="3"></th>
-<div class="lineupdamnit" <%= button_to 'Add URL', new_note_path %> </div>
+
     <% @notes.each do |note| %>
 
         <!--<td><%= note.name %></td> -->
@@ -27,7 +27,7 @@
       <td><button><%= link_to 'Show', note %></button></td>
       <td><button><%= link_to 'Edit', edit_note_path(note) %></button></td>
       <td><button><%= link_to 'Destroy', note, method: :delete, data: { confirm: 'Are you sure?' } %></button></td>
-      <!--<td><button><%= link_to 'Add', new_note_path %></button></td>-->
+      <td><button><%= link_to 'Add', new_note_path %></button></td>
       <br> </br>
       </tr>
     </div>

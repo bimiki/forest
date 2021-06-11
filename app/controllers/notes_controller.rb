@@ -5,7 +5,7 @@ class NotesController < ApplicationController
   # GET /notes or /notes.json
   def index
     @notes = current_user.notes.order(cached_votes_score: :desc)
-    unless nil
+    if nil
     end
   end
 
